@@ -18,8 +18,8 @@ namespace Infratructure.Commands
         }
         public void Execute()
         {
-            var gameObject = Fabtics.CreateObjects(_gameActionModel.IdGame, _gameActionModel.IdObject);
-            var gameOperation = Fabtics.CreateOperations(_gameActionModel.IdGame, _gameActionModel.IdOperation);
+            //var gameObject = Fabrics.Fabrics.CreateObjects(_gameActionModel.IdGame, _gameActionModel.IdObject);
+            var gameOperation = Fabrics.Fabrics.CreateOperations(_gameActionModel.IdGame, _gameActionModel.IdOperation);
 
             gameOperation.Invoke(_gameActionModel.args);
         }

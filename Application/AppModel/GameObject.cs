@@ -4,14 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Model
+namespace Application.AppModel
 {
     public class GameObject
     {
-        public string id;
-        public GameObject(string id)
-        {
-            this.id = id;
-        }
+        public Guid Id { get; set; }
     }
 }
